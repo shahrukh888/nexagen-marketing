@@ -13,7 +13,7 @@ const services = [
     number: "02",
     title: "Web Designing",
     text: "Modern, responsive websites designed to turn visitors into customers.",
-    image: "/Web Designing.JPEG",
+    image: "/Web Designing.jpeg",
   },
   {
     number: "03",
