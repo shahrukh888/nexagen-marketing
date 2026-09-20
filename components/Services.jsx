@@ -19,13 +19,13 @@ const services = [
     number: "03",
     title: "E-Commerce",
     text: "Online stores built to sell, scale and create better customer experiences.",
-    image: "/E-Commerce.JPEG",
+    image: "/E-Commerce.jpeg",
   },
   {
     number: "04",
     title: "Social Media",
     text: "Content and community strategies that keep your brand relevant.",
-    image: "/Social Media.JPEG",
+    image: "/Social Media.jpeg",
   },
   {
     number: "05",
