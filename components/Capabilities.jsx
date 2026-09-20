@@ -130,7 +130,7 @@ export default function Capabilities() {
 
               {/* CAPABILITIES */}
 
-              <div className="grid w-full grid-cols-2 border-t border-white/15 sm:grid-cols-4 lg:flex lg:w-[48%] lg:border-t-0">
+              <div className="grid w-full grid-cols-4 border-t border-white/15 lg:flex lg:w-[48%] lg:border-t-0">
 
                 {capabilities.map((capability, index) => {
 
@@ -154,7 +154,7 @@ export default function Capabilities() {
                   return (
                     <div
                       key={capability.number}
-                      className={`min-w-0 px-3 py-5 sm:px-4 sm:py-4 lg:flex-1 lg:py-0 ${
+                      className={`min-w-0 px-1 py-4 sm:px-4 sm:py-4 lg:flex-1 lg:py-0 ${
                         index !== 0
                           ? "border-l border-white/15"
                           : ""
@@ -173,7 +173,7 @@ export default function Capabilities() {
                         {capability.number}
                       </span>
 
-                      <h3 className="mt-2 text-sm font-semibold tracking-tight text-white">
+                      <h3 className="mt-2 text-[10px] font-semibold tracking-tight text-white sm:text-sm">
                         {capability.title}
                       </h3>
 
