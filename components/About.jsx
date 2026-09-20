@@ -62,7 +62,7 @@ export default function About() {
     <section
       ref={sectionRef}
       id="about"
-      className="relative min-h-[160vh] overflow-hidden bg-[#0a0a0a]"
+      className="relative min-h-[160vh] overflow-hidden bg-[#708090]"
     >
       <div className="sticky top-0 flex min-h-screen items-center">
         <div className="mx-auto w-full max-w-7xl px-6 py-20 lg:px-10">
