@@ -71,21 +71,21 @@ export default function Services() {
     };
   }, []);
 
-  const revealProgress = Math.min(
-    scrollProgress / 0.75,
-    1
-  );
+ const revealProgress = Math.min(
+  scrollProgress / 0.75,
+  1
+);
 
-  const fadeProgress =
-    scrollProgress > 0.75
-      ? Math.min(
-          (scrollProgress - 0.75) / 0.25,
-          1
-        )
-      : 0;
+const fadeProgress =
+  scrollProgress > 0.75
+    ? Math.min(
+        (scrollProgress - 0.75) / 0.25,
+        1
+      )
+    : 0;
 
-  const sectionOpacity =
-    1 - fadeProgress * 0.5;
+const sectionOpacity =
+  1 - fadeProgress * 0.5;
 
   const headingOpacity =
     scrollProgress < 0.45
@@ -114,8 +114,7 @@ export default function Services() {
       id="services"
       className="relative min-h-[250vh] bg-[#0a0a0a]"
     >
-      <div className="sticky top-0 flex min-h-screen items-center overflow-hidden">
-
+      <div className="sticky top-0 flex min-h-screen items-center overflow-visible lg:overflow-hidden">
         <div
           className="mx-auto w-full max-w-7xl px-6 lg:px-10"
           style={{
@@ -142,7 +141,7 @@ export default function Services() {
             </h2>
           </div>
 
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-5">
+          <div className="grid grid-cols-2 gap-3 md:grid-cols-2 md:gap-4 lg:grid-cols-5">
 
             {services.map((service, index) => {
 
@@ -164,7 +163,7 @@ export default function Services() {
                 <a
                   key={service.number}
                   href="#contact"
-                  className="group relative block min-h-[300px] overflow-hidden border border-white/15 bg-[#111] transition-colors duration-500 hover:border-[#ff4d3d]"
+                  className="group relative block min-h-[190px] overflow-hidden border border-white/15 bg-[#111] transition-colors duration-500 hover:border-[#ff4d3d]"
                   style={{
                     opacity: boxProgress,
                     transform: `translateY(${
@@ -184,7 +183,7 @@ export default function Services() {
                     </>
                   )}
 
-                  <div className="relative z-10 h-[300px] p-6">
+                  <div className="relative z-10 h-[190px] p-4 sm:h-[300px] sm:p-6">
 
                     <div className="flex items-start justify-between">
                       <span className="text-sm font-medium text-[#ff4d3d]">
@@ -196,13 +195,13 @@ export default function Services() {
                       </span>
                     </div>
 
-                    <div className="absolute bottom-24 left-6 right-6">
+                    <div className="absolute bottom-16 left-4 right-4 sm:bottom-24 sm:left-6 sm:right-6">
                       <h3 className="text-2xl font-semibold leading-tight tracking-tight text-white lg:text-3xl">
                         {service.title}
                       </h3>
                     </div>
 
-                    <div className="absolute bottom-6 left-6 right-6">
+                    <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6">
                       <p
                         className={`text-xs leading-5 ${
                           service.image
