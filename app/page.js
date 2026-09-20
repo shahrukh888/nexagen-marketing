@@ -21,6 +21,7 @@ export default function Home() {
 
 
       {/* CAPABILITIES */}
+      <div className="-mt-[95vh]"></div>
       <Capabilities />
 
 
