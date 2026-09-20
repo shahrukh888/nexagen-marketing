@@ -31,7 +31,7 @@ const services = [
     number: "05",
     title: "Performance Ads",
     text: "Targeted PPC campaigns focused on measurable growth and leads.",
-    image: "/Performance Ads.JPEG",
+    image: "/Performance Ads.jpeg",
   },
 ];
 
